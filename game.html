@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Conway Game App</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+  <div class="menu">
+	Conway Game
+  </div>
+  	<p>	
+  		<label for="txtGridSize">
+			<input id="txtGridSize" type="text" placeholder="Enter grid size here"/>
+		</label>
+		<input type="button" value="Enter" id="btnenter">
+	</p>
+
+	<p>
+		<input type="button" value="Start" id="start">
+		<input type="button" value="Stop" id="stop">
+		<input type="button" value="Reset" id="reset">
+	</p>	
+	<p>
+		Generations - 
+		Timer - 
+	</p>	
+	
+	<div id="gameBoard">
+		Please enter grid size and press enter button
+	</div>
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="js/conway-game.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

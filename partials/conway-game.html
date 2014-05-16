@@ -1,0 +1,25 @@
+<p>	
+  	<label for="txtGridSize">
+		<input id="txtGridSize" type="text" placeholder="Enter grid size here" ng-model="gridTempSize"/>
+	</label>
+	<input type="button" value="Enter" id="btnenter" ng-click="updateGridSize()">
+	Grid Size - {{gridSize}}
+</p>
+
+<p>
+	Generation - {{generation}}</br>
+	Spent Time - {{msToTime(spentTime)}}
+</p>
+<p>
+	<input type="button" value="Start" id="start" ng-click="startGame()">
+	<input type="button" value="Stop" id="stop" ng-click="stopGame()">
+	<input type="button" value="Reset" id="reset" ng-click="resetGame()">
+</p>	
+<div class="container" ng-repeat="row in successor" ng-style="{width:'{{containerWidth}}'}">
+	<div class="cell" ng-repeat="col in row" ng-class="{true: 'black', false: ''}[col.state==1]">
+	</div>
+</div>
+
+<div ng-hide="successor">
+	Please enter grid number and click on start button.
+</div>

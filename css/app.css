@@ -1,0 +1,25 @@
+td {
+	height: 30px;
+	width: 30px;
+}
+.black {
+	color: red;
+	background-color: red;
+}
+
+.container {
+	width: 80px;
+	border: 1px solid gray;
+	height: 3px;
+}
+
+.cell {
+	width: 3px;
+	border-left: 1px solid gray;
+	height: 3px;
+	float: left;
+}
+
+.container div.cell:first-child {
+	border: none;
+}
